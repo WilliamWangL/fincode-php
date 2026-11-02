@@ -1,0 +1,34 @@
+{
+    "name": "fincode/fincode-php",
+    "description": "PHP client for the FinCode global financial data API: IBAN, SWIFT/BIC, routing, sort code, BSB, IFSC, CNAPS, BIN and the bank directory",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "fincode",
+        "iban",
+        "swift",
+        "bic",
+        "routing-number",
+        "sort-code",
+        "bsb",
+        "ifsc",
+        "cnaps",
+        "bin"
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "FinCode\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "php tests/run.php"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
